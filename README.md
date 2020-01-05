@@ -36,12 +36,16 @@ because we generated the matrices with the random module we also add the time ta
 Numba is an open-source JIT compiler that translates a subset of Python and NumPy into fast machine code using LLVM, via the llvmlite Python package. It offers a range of options for parallelising Python code for CPUs and GPUs, often with only minor code changes. <br>
 
 Well, in my case, i tried to boost up a bit the for loop and list method by using numba, this is the graph i obtained:<br>
-![With numba](/img/numba.png "numba")
-This Graph showcase just how much numba made the program run so much faster, last time the speed on a (500,500) matrix was about 75.036, after boosting the program with numba the speed was an incredible....19.97896638999373 seconds, it seems little but this is a great achievement given  the time it took initially to run it, i mean compare these 2 graphs:
+![With numba](/img/numba.png "numba") <br>
 <br>
 
-![Original one](/img/task.png "first image") ![With numba](/img/numba.png "numba")
-Using numba.jit the speed increased by almost 4 this is amazing when seen on a bigger picture, imagine if we had to work with a (10000,10000) matrix, the increase in speed would be more significant.
+This Graph showcase just how much numba made the program run so much faster, last time the speed on a (500,500) matrix was about 75.036, after boosting the program with numba the speed was an incredible....19.97896638999373 seconds, it seems little but this is a great achievement given  the time it took initially to run it, i mean compare these 2 graphs:
+<br>                                       
+                                             
+![Original one](/img/task.png "first image") ![With numba](/img/numba.png "numba")<br>
+<br>
+
+Using numba.jit the speed increased by almost 4, this is amazing when seen on a bigger picture, imagine if we had to work with a (10000,10000) matrix, the increase in speed would be more significant.
 
 <br><br><br>
 Made with 😍, a lot of research, trial and debugging by `Shadowblade` for `GCI 2019`, Opensource 
