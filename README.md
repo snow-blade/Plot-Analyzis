@@ -1,16 +1,24 @@
 # Plot-Analyzis
 A Repo which questions deep flaws of our oh so loved python with plots and analyzis in a readme<br><br>
-I stopped the computation at a (500,500) matrix because my gpu is really old but instead of going from 10 to 100 to 1000...i instead advanced 10 by ten (x+10,y+10) and got a good enough data set.<br>
-You can find my hardware info in the `hardare_info.txt` file.<br>
-To install all the needed packages write `$ pip install -r requirements.txt`<br>
+I stopped the computation at a (500,500) matrix because my gpu is really old but instead of going from 10 to 100 to 1000...i instead advanced 10 by ten (x+10,y+10) and got a good enough data set.
+<br>
+
+You can find my hardware info in the `hardare_info.txt` file.
+<br>
+
+To install all the needed packages write `$ pip install -r requirements.txt`
+<br>
+
 First let's start with a simple image of the obtained graph:
 ![Original one](/img/task.png "First graph") 
 You might certainly Be asking yourself these questions.
 
 ### 1. Why is the python code with a for loop so slow?:
 <br>
+
 First, let's make a simple comparison between python and a 'faster' language, let's take for example c,
 <br>
+
 Python is a higher level language than C, which means it abstracts the details of the computer from you - memory management, pointers, etc, and allows you to write programs in a way which is closer to how humans think.
 <br>
 
